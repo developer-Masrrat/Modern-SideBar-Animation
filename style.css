@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    perspective: 500px;
+    overflow: hidden;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
+    background-color: #f3f3f3;
+}
+
+#background i{
+    cursor: pointer;
+}
+
+#headings{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#headings h1{
+    font-size: 45px ;
+}
+
+#headings p{
+    font-size: 10px ;
+}
+
+#elements{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+    margin-top: 60px;
+    /* background-color: red; */
+}
+
+#elements .element{
+    width: 19%;
+    height: 270px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.element .pic{
+    width: 100%;
+    height: 210px;
+    background-color:#fff;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+#elements .element:nth-child(1) .pic{
+    background-image: url(https://images.unsplash.com/photo-1523909693274-b57f4aea34cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+
+}
+
+#elements .element:nth-child(2) .pic{
+    background-image: url(https://images.unsplash.com/photo-1533616688419-b7a585564566?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+
+#elements .element:nth-child(3) .pic{
+    background-image: url(https://images.unsplash.com/photo-1476994230281-1448088947db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+}
+
+#elements .element:nth-child(4) .pic{
+    background-image: url(https://images.unsplash.com/photo-1526228446530-49914082ff8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+
+.element .content{
+    padding: 12px 8px;
+}
+
+.element .content h5{
+    color: rgb(179, 176, 176);
+    margin-top: 5px;
+    
+}
+
+.element .content span{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.element .content span i{
+    margin-left: 8px;
+}
+
+#sidenav{
+    display: flex;
+    width: 200px;
+    height: 80%;
+    left: -10%;
+    transition: all ease-in-out .5s;
+    top: 50%;
+    transform: translate(0, -50%) ;
+    position: absolute;
+    /* background-color: red; */
+}
+
+#sidenav i{
+    color: rgb(204, 204, 204);
+    margin-top: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#sidenav h5{
+    margin-bottom: 30px;
+}
+
+#sidenav a{
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #777;
+}
+
+#sidenav a:hover{
+    color: black;
+}
